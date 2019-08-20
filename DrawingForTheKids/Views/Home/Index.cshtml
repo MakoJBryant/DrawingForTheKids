@@ -2,7 +2,77 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Carousel div. -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/school.jpg" alt="Kids waving" width="1100" height="500">
+            <div class="carousel-caption">
+                <p>On January of 2019 Debbie, who was six years old, started selling drawings to raise funds to buy desks for rural schools in Guatemala.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/desksOnTruck.jpg" alt="School" width="1100" height="500">
+            <div class="carousel-caption">
+                <p>After more than 100 drawings sold, On July 18, 2019 Debbie traveled to Guatemala and delivered 150 desks to 3 schools.</p>
+                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Donate</button>
+                <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Gallery</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/schoolKids.jpg" alt="Desks at the school" width="1100" height="500">
+            <div class="carousel-caption">
+                <p>Thank you for your help!</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
 </div>
+
+
+<!-- Gallery div. -->
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+            <img src="~/images/arcticfox.jpg" alt="" width="600" height="400">
+        </a>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="~/images/ariel.jpg" alt="" width="600" height="400">
+        </a>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+            <img src="~/images/batman.jpg" alt="" width="600" height="400">
+        </a>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="~/images/llama.jpg" alt="" width="600" height="400">
+        </a>
+    </div>
+</div>
+
+
+
